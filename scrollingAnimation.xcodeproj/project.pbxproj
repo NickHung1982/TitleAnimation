@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		37ABCF181F37C42600E01A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABCF171F37C42600E01A99 /* AppDelegate.swift */; };
-		37ABCF1A1F37C42600E01A99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABCF191F37C42600E01A99 /* ViewController.swift */; };
 		37ABCF1D1F37C42600E01A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37ABCF1B1F37C42600E01A99 /* Main.storyboard */; };
 		37ABCF1F1F37C42600E01A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37ABCF1E1F37C42600E01A99 /* Assets.xcassets */; };
 		37ABCF221F37C42600E01A99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37ABCF201F37C42600E01A99 /* LaunchScreen.storyboard */; };
+		37ABCF2A1F37CCD100E01A99 /* firstTableviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABCF291F37CCD100E01A99 /* firstTableviewController.swift */; };
+		37ABCF2C1F440C0C00E01A99 /* TPM_Cast.png in Resources */ = {isa = PBXBuildFile; fileRef = 37ABCF2B1F440C0C00E01A99 /* TPM_Cast.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37ABCF141F37C42600E01A99 /* scrollingAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrollingAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37ABCF171F37C42600E01A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37ABCF191F37C42600E01A99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37ABCF1C1F37C42600E01A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37ABCF1E1F37C42600E01A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37ABCF211F37C42600E01A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37ABCF231F37C42600E01A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37ABCF291F37CCD100E01A99 /* firstTableviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstTableviewController.swift; sourceTree = "<group>"; };
+		37ABCF2B1F440C0C00E01A99 /* TPM_Cast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TPM_Cast.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +56,13 @@
 		37ABCF161F37C42600E01A99 /* scrollingAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				37ABCF2B1F440C0C00E01A99 /* TPM_Cast.png */,
 				37ABCF171F37C42600E01A99 /* AppDelegate.swift */,
-				37ABCF191F37C42600E01A99 /* ViewController.swift */,
 				37ABCF1B1F37C42600E01A99 /* Main.storyboard */,
 				37ABCF1E1F37C42600E01A99 /* Assets.xcassets */,
 				37ABCF201F37C42600E01A99 /* LaunchScreen.storyboard */,
 				37ABCF231F37C42600E01A99 /* Info.plist */,
+				37ABCF291F37CCD100E01A99 /* firstTableviewController.swift */,
 			);
 			path = scrollingAnimation;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			files = (
 				37ABCF221F37C42600E01A99 /* LaunchScreen.storyboard in Resources */,
 				37ABCF1F1F37C42600E01A99 /* Assets.xcassets in Resources */,
+				37ABCF2C1F440C0C00E01A99 /* TPM_Cast.png in Resources */,
 				37ABCF1D1F37C42600E01A99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37ABCF1A1F37C42600E01A99 /* ViewController.swift in Sources */,
+				37ABCF2A1F37CCD100E01A99 /* firstTableviewController.swift in Sources */,
 				37ABCF181F37C42600E01A99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +306,7 @@
 				37ABCF281F37C42600E01A99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

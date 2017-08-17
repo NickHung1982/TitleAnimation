@@ -1,26 +1,155 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Ys-f9-gLz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--First Tableview Controller-->
+        <scene sceneID="fRV-Gf-NUN">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="6mr-8d-24Y" customClass="firstTableviewController" customModule="scrollingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" id="hyO-9n-KcX">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="sQY-As-CSF">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TPM_Cast.png" translatesAutoresizingMaskIntoConstraints="NO" id="U2V-Lh-wTH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="U2V-Lh-wTH" firstAttribute="leading" secondItem="sQY-As-CSF" secondAttribute="leading" id="G7G-Hc-iYu"/>
+                                <constraint firstAttribute="trailing" secondItem="U2V-Lh-wTH" secondAttribute="trailing" id="oFx-If-WNK"/>
+                                <constraint firstAttribute="bottom" secondItem="U2V-Lh-wTH" secondAttribute="bottom" id="sO2-yN-Pg7"/>
+                                <constraint firstItem="U2V-Lh-wTH" firstAttribute="top" secondItem="sQY-As-CSF" secondAttribute="top" id="uDG-h5-QpQ"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="q7A-bK-ZrR">
+                                <rect key="frame" x="0.0" y="278" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q7A-bK-ZrR" id="oZs-mD-uQm">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDg-Xf-dZ7">
+                                            <rect key="frame" x="8" y="18" width="359" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="1Ag-SO-5hq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Or6-Yu-BOG">
+                                            <rect key="frame" x="8" y="47" width="359" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Jn3-q9-IkE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fe-fJ-evy">
+                                            <rect key="frame" x="8" y="76" width="359" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="hhD-fw-PbR"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="textColor" red="1" green="0.2784313725" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qux-kd-3gz">
+                                            <rect key="frame" x="8" y="105" width="359" height="28.5"/>
+                                            <string key="text">Pence was responding to a New York Times report that some Republicans were moving to form a "shadow campaign" as though President Donald Trump were not involved. It said multiple advisers to Pence "have already intimated to party donors that he would plan to run if Mr. Trump did not."
+
+The report said Pence had not only kept a full political calendar but also had created his own independent power base, including a political fund-raising group called the "Great America Committee."
+
+But Pence called the article "fake news" and said his entire team was focused on advancing Trump's agenda and seeing him re-elected in 2020.
+
+"The allegations in this article are categorically false and represent just the latest attempt by the media to divide this Administration," Pence said in a statement.
+
+The Times stood by its coverage. "We are confident in the accuracy of our reporting and will let the story speak for itself," New York Times spokeswoman Danielle Rhoades Ha said in an email.
+
+Pence has good relations with conservative political groups and some of the Republican Party's big donors, including billionaire brothers Charles and David Koch.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9fe-fJ-evy" firstAttribute="trailing" secondItem="oZs-mD-uQm" secondAttribute="trailingMargin" id="2My-IS-Ifs"/>
+                                        <constraint firstItem="TDg-Xf-dZ7" firstAttribute="top" secondItem="oZs-mD-uQm" secondAttribute="topMargin" constant="10" id="6xY-AV-M9r"/>
+                                        <constraint firstItem="TDg-Xf-dZ7" firstAttribute="trailing" secondItem="oZs-mD-uQm" secondAttribute="trailingMargin" id="Aow-eL-Rok"/>
+                                        <constraint firstItem="Or6-Yu-BOG" firstAttribute="top" secondItem="TDg-Xf-dZ7" secondAttribute="bottom" constant="8" id="E5B-YU-cGc"/>
+                                        <constraint firstItem="Qux-kd-3gz" firstAttribute="top" secondItem="9fe-fJ-evy" secondAttribute="bottom" constant="8" id="G9l-wY-dQW"/>
+                                        <constraint firstItem="TDg-Xf-dZ7" firstAttribute="leading" secondItem="oZs-mD-uQm" secondAttribute="leadingMargin" id="HrH-84-6lq"/>
+                                        <constraint firstItem="9fe-fJ-evy" firstAttribute="top" secondItem="Or6-Yu-BOG" secondAttribute="bottom" constant="8" id="KIr-mQ-K10"/>
+                                        <constraint firstItem="9fe-fJ-evy" firstAttribute="leading" secondItem="oZs-mD-uQm" secondAttribute="leadingMargin" id="PTW-Cb-cMd"/>
+                                        <constraint firstItem="Or6-Yu-BOG" firstAttribute="trailing" secondItem="oZs-mD-uQm" secondAttribute="trailingMargin" id="Qnc-7u-40j"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Qux-kd-3gz" secondAttribute="bottom" constant="8" id="Zu9-F3-dB6"/>
+                                        <constraint firstItem="Qux-kd-3gz" firstAttribute="leading" secondItem="oZs-mD-uQm" secondAttribute="leadingMargin" id="aIn-Ow-2I7"/>
+                                        <constraint firstItem="Or6-Yu-BOG" firstAttribute="leading" secondItem="oZs-mD-uQm" secondAttribute="leadingMargin" id="jK2-Uq-kSa"/>
+                                        <constraint firstItem="Qux-kd-3gz" firstAttribute="trailing" secondItem="oZs-mD-uQm" secondAttribute="trailingMargin" id="tp3-Vh-vrf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6mr-8d-24Y" id="93n-9u-EW2"/>
+                            <outlet property="delegate" destination="6mr-8d-24Y" id="j3d-o3-v6Y"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="g7o-7d-aov">
+                        <barButtonItem key="leftBarButtonItem" systemItem="compose" id="Chj-9H-sX4">
+                            <color key="tintColor" red="0.34901960780000002" green="0.63137254899999995" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Ylw-is-iW1">
+                            <color key="tintColor" red="0.96470588239999999" green="0.6705882353" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="TableHeaderImg" destination="U2V-Lh-wTH" id="RY8-RX-jhn"/>
+                        <outlet property="TableHeaderView" destination="sQY-As-CSF" id="rhx-Sh-h67"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLV-Ji-0X0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1264.8" y="126.38680659670166"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2kv-az-N6V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Ys-f9-gLz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" alpha="0.5" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="5xh-iK-2nF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6mr-8d-24Y" kind="relationship" relationship="rootViewController" id="V9f-Ay-rzb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AvX-GT-19x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325.60000000000002" y="126.38680659670166"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TPM_Cast.png" width="1024" height="435"/>
+    </resources>
 </document>

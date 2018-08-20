@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373E27E2212B426A0003FFDF /* scrollingAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E27E1212B426A0003FFDF /* scrollingAnimationUITests.swift */; };
 		37ABCF181F37C42600E01A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABCF171F37C42600E01A99 /* AppDelegate.swift */; };
 		37ABCF1D1F37C42600E01A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37ABCF1B1F37C42600E01A99 /* Main.storyboard */; };
 		37ABCF1F1F37C42600E01A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37ABCF1E1F37C42600E01A99 /* Assets.xcassets */; };
@@ -15,7 +16,20 @@
 		37ABCF2C1F440C0C00E01A99 /* TPM_Cast.png in Resources */ = {isa = PBXBuildFile; fileRef = 37ABCF2B1F440C0C00E01A99 /* TPM_Cast.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		373E27E4212B426A0003FFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37ABCF0C1F37C42600E01A99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37ABCF131F37C42600E01A99;
+			remoteInfo = scrollingAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		373E27DF212B42690003FFDF /* scrollingAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrollingAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		373E27E1212B426A0003FFDF /* scrollingAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrollingAnimationUITests.swift; sourceTree = "<group>"; };
+		373E27E3212B426A0003FFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37ABCF141F37C42600E01A99 /* scrollingAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrollingAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37ABCF171F37C42600E01A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37ABCF1C1F37C42600E01A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		373E27DC212B42690003FFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37ABCF111F37C42600E01A99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		373E27E0212B426A0003FFDF /* scrollingAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				373E27E1212B426A0003FFDF /* scrollingAnimationUITests.swift */,
+				373E27E3212B426A0003FFDF /* Info.plist */,
+			);
+			path = scrollingAnimationUITests;
+			sourceTree = "<group>";
+		};
 		37ABCF0B1F37C42600E01A99 = {
 			isa = PBXGroup;
 			children = (
 				37ABCF161F37C42600E01A99 /* scrollingAnimation */,
+				373E27E0212B426A0003FFDF /* scrollingAnimationUITests */,
 				37ABCF151F37C42600E01A99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				37ABCF141F37C42600E01A99 /* scrollingAnimation.app */,
+				373E27DF212B42690003FFDF /* scrollingAnimationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +102,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		373E27DE212B42690003FFDF /* scrollingAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 373E27E6212B426A0003FFDF /* Build configuration list for PBXNativeTarget "scrollingAnimationUITests" */;
+			buildPhases = (
+				373E27DB212B42690003FFDF /* Sources */,
+				373E27DC212B42690003FFDF /* Frameworks */,
+				373E27DD212B42690003FFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				373E27E5212B426A0003FFDF /* PBXTargetDependency */,
+			);
+			name = scrollingAnimationUITests;
+			productName = scrollingAnimationUITests;
+			productReference = 373E27DF212B42690003FFDF /* scrollingAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		37ABCF131F37C42600E01A99 /* scrollingAnimation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37ABCF261F37C42600E01A99 /* Build configuration list for PBXNativeTarget "scrollingAnimation" */;
@@ -93,13 +143,18 @@
 		37ABCF0C1F37C42600E01A99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = NickOwn;
 				TargetAttributes = {
+					373E27DE212B42690003FFDF = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 37ABCF131F37C42600E01A99;
+					};
 					37ABCF131F37C42600E01A99 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 2A624895QU;
+						DevelopmentTeam = U9TJZ6TDQQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -118,11 +173,19 @@
 			projectRoot = "";
 			targets = (
 				37ABCF131F37C42600E01A99 /* scrollingAnimation */,
+				373E27DE212B42690003FFDF /* scrollingAnimationUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		373E27DD212B42690003FFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37ABCF121F37C42600E01A99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +200,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		373E27DB212B42690003FFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373E27E2212B426A0003FFDF /* scrollingAnimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37ABCF101F37C42600E01A99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +218,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		373E27E5212B426A0003FFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37ABCF131F37C42600E01A99 /* scrollingAnimation */;
+			targetProxy = 373E27E4212B426A0003FFDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		37ABCF1B1F37C42600E01A99 /* Main.storyboard */ = {
@@ -168,6 +247,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		373E27E7212B426A0003FFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = scrollingAnimationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.scrollingAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = scrollingAnimation;
+			};
+			name = Debug;
+		};
+		373E27E8212B426A0003FFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = scrollingAnimationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.scrollingAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = scrollingAnimation;
+			};
+			name = Release;
+		};
 		37ABCF241F37C42600E01A99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -265,7 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2A624895QU;
+				DEVELOPMENT_TEAM = U9TJZ6TDQQ;
 				INFOPLIST_FILE = scrollingAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nick.com.scrollingAnimation;
@@ -278,7 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2A624895QU;
+				DEVELOPMENT_TEAM = U9TJZ6TDQQ;
 				INFOPLIST_FILE = scrollingAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nick.com.scrollingAnimation;
@@ -290,6 +425,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		373E27E6212B426A0003FFDF /* Build configuration list for PBXNativeTarget "scrollingAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				373E27E7212B426A0003FFDF /* Debug */,
+				373E27E8212B426A0003FFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		37ABCF0F1F37C42600E01A99 /* Build configuration list for PBXProject "scrollingAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Ys-f9-gLz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Ys-f9-gLz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,16 +15,16 @@
             <objects>
                 <tableViewController id="6mr-8d-24Y" customClass="firstTableviewController" customModule="scrollingAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" id="hyO-9n-KcX">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="sQY-As-CSF">
+                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="sQY-As-CSF">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TPM_Cast.png" translatesAutoresizingMaskIntoConstraints="NO" id="U2V-Lh-wTH">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,11 +40,11 @@
                                 <rect key="frame" x="0.0" y="278" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q7A-bK-ZrR" id="oZs-mD-uQm">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDg-Xf-dZ7">
-                                            <rect key="frame" x="8" y="18" width="359" height="21"/>
+                                            <rect key="frame" x="16" y="21" width="343" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="1Ag-SO-5hq"/>
                                             </constraints>
@@ -53,7 +53,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Or6-Yu-BOG">
-                                            <rect key="frame" x="8" y="47" width="359" height="21"/>
+                                            <rect key="frame" x="16" y="50" width="343" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="Jn3-q9-IkE"/>
                                             </constraints>
@@ -62,7 +62,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fe-fJ-evy">
-                                            <rect key="frame" x="8" y="76" width="359" height="21"/>
+                                            <rect key="frame" x="16" y="79" width="343" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="hhD-fw-PbR"/>
                                             </constraints>
@@ -71,7 +71,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qux-kd-3gz">
-                                            <rect key="frame" x="8" y="105" width="359" height="28.5"/>
+                                            <rect key="frame" x="16" y="108" width="343" height="23"/>
                                             <string key="text">Pence was responding to a New York Times report that some Republicans were moving to form a "shadow campaign" as though President Donald Trump were not involved. It said multiple advisers to Pence "have already intimated to party donors that he would plan to run if Mr. Trump did not."
 
 The report said Pence had not only kept a full political calendar but also had created his own independent power base, including a political fund-raising group called the "Great America Committee."
@@ -117,6 +117,9 @@ Pence has good relations with conservative political groups and some of the Repu
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Ylw-is-iW1">
                             <color key="tintColor" red="0.96470588239999999" green="0.6705882353" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="F4p-tu-jjR" kind="show" id="var-G5-VNQ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -128,13 +131,47 @@ Pence has good relations with conservative political groups and some of the Repu
             </objects>
             <point key="canvasLocation" x="1264.8" y="126.38680659670166"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="I8J-Z2-6ys">
+            <objects>
+                <viewController id="F4p-tu-jjR" customClass="SecondViewController" customModule="scrollingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wfw-xo-gcA"/>
+                        <viewControllerLayoutGuide type="bottom" id="cf9-ok-md8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zvt-rb-B82">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeR-QK-P0X">
+                                <rect key="frame" x="137.5" y="291" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aUp-Pl-FhX"/>
+                                    <constraint firstAttribute="width" constant="100" id="iS7-LS-eYi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oeR-QK-P0X" firstAttribute="centerY" secondItem="zvt-rb-B82" secondAttribute="centerY" id="gsR-Sa-IfD"/>
+                            <constraint firstItem="oeR-QK-P0X" firstAttribute="centerX" secondItem="zvt-rb-B82" secondAttribute="centerX" id="wdb-jS-jxp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gBY-Q5-9cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2265" y="127"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="2kv-az-N6V">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Ys-f9-gLz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" alpha="0.5" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="5xh-iK-2nF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

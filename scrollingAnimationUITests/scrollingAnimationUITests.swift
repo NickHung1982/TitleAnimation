@@ -49,4 +49,11 @@ class scrollingAnimationUITests: XCTestCase {
         
     }
     
+    func testTwo(){
+        
+        let cameraButton = XCUIApplication().navigationBars["scrollingAnimation.firstTableview"].buttons["Camera"]
+        cameraButton.tap()
+       
+        
+    }
 }

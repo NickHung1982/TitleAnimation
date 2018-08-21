@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		373E27E2212B426A0003FFDF /* scrollingAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E27E1212B426A0003FFDF /* scrollingAnimationUITests.swift */; };
+		373E27EA212C59620003FFDF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E27E9212C59620003FFDF /* SecondViewController.swift */; };
 		37ABCF181F37C42600E01A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABCF171F37C42600E01A99 /* AppDelegate.swift */; };
 		37ABCF1D1F37C42600E01A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37ABCF1B1F37C42600E01A99 /* Main.storyboard */; };
 		37ABCF1F1F37C42600E01A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37ABCF1E1F37C42600E01A99 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		373E27DF212B42690003FFDF /* scrollingAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrollingAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		373E27E1212B426A0003FFDF /* scrollingAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrollingAnimationUITests.swift; sourceTree = "<group>"; };
 		373E27E3212B426A0003FFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		373E27E9212C59620003FFDF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		37ABCF141F37C42600E01A99 /* scrollingAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrollingAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37ABCF171F37C42600E01A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37ABCF1C1F37C42600E01A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				37ABCF201F37C42600E01A99 /* LaunchScreen.storyboard */,
 				37ABCF231F37C42600E01A99 /* Info.plist */,
 				37ABCF291F37CCD100E01A99 /* firstTableviewController.swift */,
+				373E27E9212C59620003FFDF /* SecondViewController.swift */,
 			);
 			path = scrollingAnimation;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				TargetAttributes = {
 					373E27DE212B42690003FFDF = {
 						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = U9TJZ6TDQQ;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 37ABCF131F37C42600E01A99;
 					};
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				373E27EA212C59620003FFDF /* SecondViewController.swift in Sources */,
 				37ABCF2A1F37CCD100E01A99 /* firstTableviewController.swift in Sources */,
 				37ABCF181F37C42600E01A99 /* AppDelegate.swift in Sources */,
 			);
@@ -263,6 +268,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U9TJZ6TDQQ;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = scrollingAnimationUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -291,6 +297,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U9TJZ6TDQQ;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = scrollingAnimationUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;

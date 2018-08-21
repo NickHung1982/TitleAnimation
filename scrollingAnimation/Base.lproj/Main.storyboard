@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Ys-f9-gLz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Ys-f9-gLz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -117,6 +117,9 @@ Pence has good relations with conservative political groups and some of the Repu
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Ylw-is-iW1">
                             <color key="tintColor" red="0.96470588239999999" green="0.6705882353" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="F4p-tu-jjR" kind="show" id="var-G5-VNQ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -127,6 +130,40 @@ Pence has good relations with conservative political groups and some of the Repu
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLV-Ji-0X0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1264.8" y="126.38680659670166"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="I8J-Z2-6ys">
+            <objects>
+                <viewController id="F4p-tu-jjR" customClass="SecondViewController" customModule="scrollingAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wfw-xo-gcA"/>
+                        <viewControllerLayoutGuide type="bottom" id="cf9-ok-md8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zvt-rb-B82">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeR-QK-P0X">
+                                <rect key="frame" x="137.5" y="291" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aUp-Pl-FhX"/>
+                                    <constraint firstAttribute="width" constant="100" id="iS7-LS-eYi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oeR-QK-P0X" firstAttribute="centerY" secondItem="zvt-rb-B82" secondAttribute="centerY" id="gsR-Sa-IfD"/>
+                            <constraint firstItem="oeR-QK-P0X" firstAttribute="centerX" secondItem="zvt-rb-B82" secondAttribute="centerX" id="wdb-jS-jxp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gBY-Q5-9cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2265" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2kv-az-N6V">

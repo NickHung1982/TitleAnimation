@@ -9,7 +9,7 @@
 import XCTest
 
 class scrollingAnimationUITests: XCTestCase {
-        
+    let app = XCUIApplication()
     override func setUp() {
         super.setUp()
         
@@ -32,7 +32,7 @@ class scrollingAnimationUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let app = XCUIApplication()
+        
         let table = app.tables.element(boundBy:0)
         
         // Get the coordinate for the bottom of the table view
@@ -51,9 +51,14 @@ class scrollingAnimationUITests: XCTestCase {
     
     func testTwo(){
         
-        let cameraButton = XCUIApplication().navigationBars["scrollingAnimation.firstTableview"].buttons["Camera"]
+        let cameraButton = app.navigationBars["scrollingAnimation.firstTableview"].buttons["Camera"]
         cameraButton.tap()
-       
         
+        app.navigationBars["scrollingAnimation.SecondView"].buttons["Back"].tap()
+       
+    }
+    
+    func testFail() {
+        XCTAssert(false, "Test fail")
     }
 }

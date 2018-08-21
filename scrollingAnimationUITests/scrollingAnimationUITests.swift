@@ -56,6 +56,9 @@ class scrollingAnimationUITests: XCTestCase {
         
         app.navigationBars["scrollingAnimation.SecondView"].buttons["Back"].tap()
        
-        
+    }
+    
+    func testFail() {
+        XCTAssert(false, "Test fail")
     }
 }

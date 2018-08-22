@@ -54,11 +54,12 @@ class scrollingAnimationUITests: XCTestCase {
         let cameraButton = app.navigationBars["scrollingAnimation.firstTableview"].buttons["Camera"]
         cameraButton.tap()
         
+        app/*@START_MENU_TOKEN@*/.buttons["changeBtn"]/*[[".buttons[\"Change\"]",".buttons[\"changeBtn\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        
         app.navigationBars["scrollingAnimation.SecondView"].buttons["Back"].tap()
        
     }
     
-    func testFail() {
-        XCTAssert(false, "Test fail")
-    }
+ 
 }
